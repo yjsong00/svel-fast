@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-DATABASE_URL = "mysql+pymysql://user:1234@211.183.3.100/db"
+DATABASE_URL = "mysql+pymysql://root:test1234@database-1.c52m2seych0a.us-east-1.rds.amazonaws.com/db"
 
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
